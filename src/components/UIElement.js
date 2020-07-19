@@ -4,11 +4,12 @@ import {IntlProvider} from "react-intl";
 import BoxContext from "../context/BoxContext";
 
 export default () => {
-	const {token} = useContext(BoxContext);
+	const {tokenState} = useContext(BoxContext);
+	// const {token} = useContext(BoxContext);
 
 	return (
 		<IntlProvider locale="en">
-			<ContentExplorer token={token}/>
+			<ContentExplorer token={tokenState}/>
 		</IntlProvider>
 	);
 }
