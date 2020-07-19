@@ -6,13 +6,12 @@ export default () => {
 
 	const onInputChange = (e) => {
 		setToken(e.target.value);
-		console.log('set token');
 	}
 
 	return (
 		<div>
 			<h1>Token Used</h1>
-				<input type="text" onChange={onInputChange} className="text-input" spellCheck={false}/>
+			<input type="text" onChange={onInputChange} className="text-input" spellCheck={false}/>
 		</div>
 	)
 };
